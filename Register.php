@@ -15,36 +15,42 @@
     }
 ?>
 
+<!------------------------------------------------------------------>
+
 <!DOCTYPE HTML>
 <html lang="en">
     <head>
         <title>Notekeep</title>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
     </head>
     
     <body>
         
-            <ul class="cssmenu">
-                <li><a href="#">Register</a></li>	
-                <li><a href="Login.php">Login</a></li>	
-            </ul>
+            <div class="container">
+              
+                <p class="link">Register</p>
                          
             <form action="" method="post" name="registerform" id="registerform">
                 <div>
-                    <input name="first_name" type="text" required="required" class="tfield" id="first_name" placeholder="First Name">
+                    <input name="first_name" class="link" type="text" required="required" class="tfield" id="first_name" placeholder="First Name">
                 </div>
                 <div>
-                    <input name="last_name" type="text" required="required" class="tfield" id="last_name" placeholder="Last Name">
+                    <input name="last_name" class="link" type="text" required="required" class="tfield" id="last_name" placeholder="Last Name">
                 </div>
                 <div>
-                    <input name="email" type="email" required="required" class="tfield" id="email" placeholder="Email">
+                    <input name="email" class="link" type="email" required="required" class="tfield" id="email" placeholder="Email">
                 </div>
                 <div>
-                    <input name="password" type="password" required="required" class="tfield" id="password" placeholder="Password">
+                    <input name="password" class="link" type="password" required="required" class="tfield" id="password" placeholder="Password">
                 </div>
                 <div>
-                    <input name="register" type="submit" class="button" id="register" value="Register">
+                    <input name="register" class="link" type="submit" class="button" id="register" value="Register">
                 </div>
             </form>
+        
+             <a class="link" href="Login.php">Login</a>	
+                
+          </div>
     </body>
 
 </html>

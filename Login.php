@@ -15,7 +15,7 @@
         $_SESSION['UserID'] = $row['UserID'];
 
         //Where they are redirected after logging in
-        header('Location: index.html');
+        header('Location: Account.php');
 
     }
    
@@ -28,9 +28,8 @@
     </head>
     <body>
     
-        <ul>
-            <li><a href="Register.php">Register</a></li>	
-        </ul>
+        
+        <p>Login</p>
         
             <form action="" method="post" name="form1" id="form1">
                 <div>
@@ -43,6 +42,8 @@
                     <input name="login" type="submit" id="login" value="Login">
                 </div>
             </form>
+        
+        <a href="Register.php">Register</a>
        
     </body>
 </html>

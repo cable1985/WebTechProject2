@@ -6,9 +6,11 @@
 <?php require 'connections.php'; ?>
 <?php
 session_start();
-if(isset($_SESSION["UserID"])){
-} else {
-    header('Location: Login.php')
+if(isset($_SESSION["UserID"])){    
+}
+
+else {
+    header('Location: Login.php');
 }
 ?>
 
@@ -20,7 +22,9 @@ if(isset($_SESSION["UserID"])){
     </head>
     
     <body>
-            
+         
+        <h2>Welcome to your account</h2>
+        <a href="Logout.php">Logout</a>
     
     </body>
 
