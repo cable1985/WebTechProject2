@@ -13,7 +13,9 @@ session_destroy();
     
     <body>
         
-        <p>You have logged out</p>
+        <p>You have been logged out</p>
+        <a href="Login.php"><button>Login</button></a>
+        <a href="Register.php"><button>Register</button></a>
 
     </body>
 </html>
