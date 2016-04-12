@@ -4,7 +4,7 @@ $username = "root";
 $password = "root";
 
 // Create connection
-$con = mysqli_connect($servername, $username, $password, "user");
+$con = mysqli_connect($servername, $username, $password, "notepad");
 
 // Check connection 
 /*

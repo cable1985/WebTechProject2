@@ -1,4 +1,104 @@
-#note {
+#registerform, #loginform, #deactivatesubmit, .btnGroup {
+    margin: 0 auto;
+    margin-top: -30px;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    border: solid #555 1px;
+}
+
+#notesubmit {
+    margin: 0 auto;
+    margin-top: -30px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, .3);
+}
+
+body {
+    background-image: url('notepaperBG.jpg');
+    background-size: cover;
+}
+
+button {
+    border: solid grey 1px;
+}
+
+.indexH {
+    background-color: rgba(255, 255, 255, .5);
+    font-size: 55px;
+    text-align: center;
+    margin-top: 250px;
+    font-family: sans-serif;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #333,  
+     1px -1px 0 #333,
+    -1px  1px 0 #333,
+     1px  1px 0 #333;
+}
+
+.title {
+    background-color: rgba(255, 255, 255, .5);
+    padding-bottom: 10px;
+    text-align: center;
+    margin-top: 200px;
+    font-size: 55px;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #333,  
+     1px -1px 0 #333,
+    -1px  1px 0 #333,
+     1px  1px 0 #333;    
+}
+
+.titleAct {
+    background-color: rgba(255, 255, 255, .5);
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 55px;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #333,  
+     1px -1px 0 #333,
+    -1px  1px 0 #333,
+     1px  1px 0 #333;
+}
+
+.rInput {
     width: 200px;
-    height: 50px;
+}
+
+.link {
+    display: block;
+    color: #4E4E4E;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 5px;
+    background-color: rgba(255, 255, 255, .5);
+}
+
+.outlink {
+    color: #4E4E4E;
+    text-decoration: none;
+    text-align: center;
+    margin-top: -30px;
+    margin-bottom: 35px;
+    background-color: rgba(255, 255, 255, .5);
+}
+
+#note {
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.note {
+    background-color: rgba(255, 255, 255, .9);
+    width: 400px;
+    margin: 10px auto;
+    padding: -10px 10px;
+    border: solid #555 1px;
+}
+
+.title, .titleAct, .link, .outlink, #note {
+    font-family: Tahoma, Geneva, sans-serif;
 }

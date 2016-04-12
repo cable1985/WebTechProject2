@@ -24,26 +24,27 @@
 <!DOCTYPE HTML>
 <html lang="en">
     <head>
-        <title>Login</title>   
+        <title>Login</title> 
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
     </head>
     <body>
     
         
-        <p>Login</p>
+        <h1 class="title">Login</h1>
         
-            <form action="" method="post" name="form1" id="form1">
+            <form action="" method="post" name="loginform" id="loginform">
                 <div>
-                    <input name="email" type="email" required="required" id="email" placeholder="Email">
+                    <input name="email" type="email" required="required" class="rInput" id="email" placeholder="Email">
                 </div>
                 <div>
-                    <input name="password" type="password" required="required" id="password" placeholder="Password">
+                    <input name="password" type="password" required="required" class="rInput" id="password" placeholder="Password">
                 </div>
                 <div>
-                    <input name="login" type="submit" id="login" value="Login">
+                    <input name="login" type="submit" id="login" class="button" value="Login">
                 </div>
             </form>
         
-        <a href="Register.php">Register</a>
+        <a class="link" href="Register.php">Register</a>
        
     </body>
 </html>
