@@ -13,7 +13,7 @@ if(isset($_SESSION["UserID"])){
 <!-- $result is a query containing all the notes
      of the current user -->
 <?php $UserID = $_SESSION["UserID"];
-      $result = mysqli_query($con, "SELECT * FROM notes WHERE UserID = '$UserID'");  
+      $result = mysqli_query($con, "SELECT * FROM notes WHERE UserID = '$UserID'");    
 ?>
 
 <!-- when you click 'save' upload the new note 
@@ -31,7 +31,7 @@ if(isset($_SESSION["UserID"])){
         header('Location: Account.php');
     
     } else if (isset($_POST['delete'])){
-    
+        $result = mysqli_query($con, "SELECT * FROM notes WHERE UserID = '$UserID'");
         $row = mysqli_fetch_array($result);
         $noteID = $row['noteID'];
         $UserID = ($_SESSION["UserID"]);
