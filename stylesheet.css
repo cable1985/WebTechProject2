@@ -93,10 +93,14 @@ button {
 
 .note {
     background-color: rgba(255, 255, 255, .9);
-    width: 400px;
+    width: 500px;
     margin: 10px auto;
     padding: -10px 10px;
     border: solid #555 1px;
+}
+
+#save {
+    margin-bottom: 20px;
 }
 
 .title, .titleAct, .link, .outlink, #note {
@@ -106,8 +110,11 @@ button {
 input[name=delete] {
     background: url("trash.png");
     border: 0;
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
     color: rgba(0, 0, 0, 0);
+    margin-bottom: 20px;
 }
+
+
 

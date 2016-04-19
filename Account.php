@@ -41,7 +41,6 @@ if(isset($_SESSION["UserID"])){
     
     } else if (isset($_POST['edit'])){
     
-        
 }?>
     
 <!DOCTYPE HTML>
@@ -74,11 +73,16 @@ if(isset($_SESSION["UserID"])){
                 <?php $noteID = $row['noteID'];?>
 
         <div id="note">
-            <p class="note"><?php echo $date; ?></br> ---------------- </br><?php echo $note; ?> </p>
+            <p class="note"><?php echo date('F/j/Y  h:i A', strtotime($row['time']) ); ?></br> ---------------- </br><?php echo $note; ?> </p>
         </div>
-                
-                <input name="hidden" type="hidden" id="hidden<?php echo $noteID;?>" value="<?php echo $noteID; ?>">
-                <input name="delete"  type="submit" src="trash.png" class="button" value="<?php echo $noteID; ?>">
+
+    <!-- Edit Function
+    <form method="get" action="AccountUpdate.php" id="notesubmit">
+                <input name="edit"  type="hidden" class="button" value="<?php echo $note; ?>">
+                <input type="submit">
+    </form> -->
+
+                <input name="delete"  type="submit" class="button" value="<?php echo $noteID; ?>">
         
             <?php endwhile; ?>
         </form>
