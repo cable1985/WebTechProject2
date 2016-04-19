@@ -7,7 +7,7 @@
     border: solid #555 1px;
 }
 
-#notesubmit {
+#notesubmit, #notedelete {
     margin: 0 auto;
     margin-top: -30px;
     padding: 10px;
@@ -102,3 +102,12 @@ button {
 .title, .titleAct, .link, .outlink, #note {
     font-family: Tahoma, Geneva, sans-serif;
 }
+
+input[name=delete] {
+    background: url("trash.png");
+    border: 0;
+    height: 50px;
+    width: 50px;
+    color: rgba(0, 0, 0, 0);
+}
+

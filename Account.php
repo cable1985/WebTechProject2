@@ -30,13 +30,12 @@ if(isset($_SESSION["UserID"])){
         
         header('Location: Account.php');
     
-    } else if (isset($_POST['delete'])){
-        $result = mysqli_query($con, "SELECT * FROM notes WHERE UserID = '$UserID'");
-        $row = mysqli_fetch_array($result);
-        $noteID = $row['noteID'];
-        $UserID = ($_SESSION["UserID"]);
+    }?> 
+<?php if (isset($_POST['delete'])){
+
+        $deleteID = $_POST['delete'];
     
-        $sql = $con->query("DELETE FROM notes WHERE noteID = '$noteID'");
+        $sql = $con->query("DELETE FROM notes WHERE noteID = '$deleteID'");
         
         header('Location: Account.php');
     
@@ -64,20 +63,22 @@ if(isset($_SESSION["UserID"])){
                 </div>
                 
                     <input name="save"  type="submit" class="button" id="save" value="Save">  
-        
+    
             <!-- Whenever a note is saved, print out the
                  note with timestamp followed by the edit
                  and delete buttons for each note -->
+    
             <?php while ($row = mysqli_fetch_array($result)): ?>
                 <?php $note = $row['note'];?>
                 <?php $date = $row['time'];?>
+                <?php $noteID = $row['noteID'];?>
 
         <div id="note">
-            <p class="note"><?php echo $date; ?></br> ---------------- </br><?php echo $note; ?></p>
+            <p class="note"><?php echo $date; ?></br> ---------------- </br><?php echo $note; ?> </p>
         </div>
                 
-                <input name="edit"  type="submit" class="button" id="edit" value="Edit">
-                <input name="delete"  type="submit" class="button" id="delete" value="Delete">
+                <input name="hidden" type="hidden" id="hidden<?php echo $noteID;?>" value="<?php echo $noteID; ?>">
+                <input name="delete"  type="submit" src="trash.png" class="button" value="<?php echo $noteID; ?>">
         
             <?php endwhile; ?>
         </form>
